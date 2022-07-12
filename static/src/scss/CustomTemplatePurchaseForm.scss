@@ -1,0 +1,134 @@
+.o_fv_custom_form_sheet {
+    min-width: 650px;
+    max-width: 1140px;
+    min-height: 330px;
+    border: 1px solid #c8c8d3;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background: white;
+    margin: 4.8px auto;
+    padding: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+main .o_fv_custom_label  {
+    display: block ;
+    margin: 6px 5px 3px 0px;
+    color: #212529;
+    font-size: 1.08333333rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+main .o_fv_custom_label_select_check  {
+    display: block ;
+    color: #212529;
+    font-size: 1.08333333rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-right: 8px;
+
+}
+// blocks prepared to responsive
+main .o_fv_general_informations{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+}
+
+main .o_fv_field_form_control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+main .o_fv_main_table {
+    margin-top: 2rem;
+}
+main .o_fv_custom_field_select_check{
+    display: flex;
+    margin: 8px 0px 3px 0px;
+    align-items: center;
+    justify-content: left;
+}
+
+main .o_fv_main_table table{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-collapse: initial;
+    border-spacing: 0;
+    
+}
+main .o_fv_main_table thead {
+    color: #495057;
+    border-bottom: 1px solid #cacaca;
+}
+main .o_fv_main_table th, main .o_fv_main_table td{
+    border-top: 1px solid #e9ecef;
+}
+main .o_fv_main_table thead > tr > th {
+    border-left: 1px solid #dfdfdf;
+    display: table-cell;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+
+main .o_fv_main_table thead > tr:last-child th {
+    border-right: 1px solid #dfdfdf;
+}
+
+
+main .o_fv_main_table table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--light);
+    color: var(--dark-variant);
+}
+
+//  RESPONSIVE
+//  MEDIA QUERIES
+@media screen and (max-width: 1200px){
+    main .o_fv_general_informations{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    main .o_fv_general_informations{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    main .o_fv_div_custom_field_select  {
+        width: 100%;
+    }
+    main .o_fv_main_table {
+        overflow-x:auto;
+    }
+    main .o_fv_main_table th, main .o_fv_main_table td{
+        padding: 0px 10px ;
+    }
+    .o_form_view .o_form_sheet_bg {
+        background: transparent;
+    }
+    .o_fv_custom_form_sheet {
+        min-width: 220px;
+        border: none;
+        box-shadow: none;
+        background: white;
+        margin: 4.8px 3px;
+        padding: 5px;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+}
